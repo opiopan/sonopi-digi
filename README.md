@@ -1,12 +1,16 @@
 Sonopi Digi
 ===
-![project phase](https://img.shields.io/badge/project%20phase-research-orange.svg)
+![project phase](https://img.shields.io/badge/project%20phase-PCB%20designing-green.svg)
 
 Sonopi Digi is a hat card for Raspberry Pi to add a S/PDIF digital sound output capability.<br>
 This hardware design is published under open source lincence. You can use and modify this design freely. There is also no limitation in commercial use.
 
 In order to export digital sound signal, Sonopi use a [Cirrus Logic WM8804](https://www.cirrus.com/products/wm8804/) as a S/PDIF transmitter.
 There are many kind of Raspberry Pi Hats installed WM8804 in the world. This IC is a defacto standard to add a S/PDIF output functionality to Raspberry Pi.
+
+## Projcect Status
+I've finished PoC on a bread board. That worked fine<br>
+I start to design PCB.
 
 ## Design Goals
 1. **Target to casual use and reasnable cost**<br>
@@ -20,10 +24,6 @@ Specifically, Sonopi Digi is designed to work when following line is added to `/
     ```
     dtoverlay=hifiberry-digi
     ```
-
-## Projcect Status
-I've investigated how configure WM8804 to apply the above design goals. This research is almost done.<br>
-I start to PoC on breadboard.
 
 ## Design Overview
 The keypoint of Sonopi Digi hardware design is configuring WM8804 to adapt to following device driver and device tree configuration.
@@ -39,17 +39,23 @@ These files shows following condition regarding WM8804 configuration.
 
 That means WM8804 pin condition should be as below.
 
-PIN       |   Configuration
-----------|-------------------------------------------------
-XIN, XOP  | 27MHz crystal
-SDIN      | Raspberry Pi I2C1 SDA pin
-GPO0      | Pull down to GND
-CSB       | Pull up to 3.3V
-SCLK      | Raspberry Pi I2C1 SCL
-BCLK      | Raspberry Pi I2S BCLK
-LRCLK     | Raspberry Pi I2S LRCLK
-DIN       | Raspberry Pi I2S DOUT
-TXO       | Optical S/PDIF transmitter module
+WM8804 PIN        |   Configuration
+------------------|-------------------------------------------------
+XIN(11), XOP(10)  | 27MHz crystal
+RSTB(6)           | Pull up to 3.3V
+SDIN(3)           | Raspberry Pi I2C1 SDA pin
+GPO0(2)           | Pull down to GND
+CSB(5)            | Pull up to 3.3V
+SCLK(1)           | Raspberry Pi I2C1 SCL
+BCLK(14)          | Raspberry Pi I2S BCLK
+LRCLK(15)         | Raspberry Pi I2S LRCLK
+DIN(13)           | Raspberry Pi I2S DOUT
+TXO(17)           | Optical S/PDIF transmitter module
 
 ## PoC Result
-Now on going.
+The PoC is concluded with great success.
+
+<p align="center">
+<img alt="description" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/images/poc.jpg" width=600>
+</p>
+
