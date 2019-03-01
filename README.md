@@ -9,11 +9,11 @@ In order to export digital sound signal, Sonopi use a [Cirrus Logic WM8804](http
 There are many kind of Raspberry Pi Hats installed WM8804 in the world. This IC is a defacto standard to add a S/PDIF output functionality to Raspberry Pi.
 
 ## Projcect Status
-I've finished PoC on a bread board. That worked fine<br>
+I've finished PoC on a bread board. That workes fine<br>
 I start to design PCB.
 
 ## Design Goals
-1. **Target to casual use and reasnable cost**<br>
+1. **Target to casual use and reasonable cost**<br>
 Sonopy Digi is not a device for audiophiles. It's a just simple solution to realize connectivity to audio amplifier without serious noise. I don't expect to install expensive parts and also don't expect to stick to beautiful circuit patterning to improve analog characteristics.<br>
 Sonopi Digi should be realized with minimum components, and should be eliminated analog circuit portion. Therefore, only optical output is installed on this product. An coaxial output which need analog driver circuit is not suitable to Sonopi Digi design policy.
 
