@@ -65,6 +65,9 @@ The PoC is concluded with great success.
 
 ## PCB Design
 <p align="center">
+<img alt="PCB schema" src="imagesrc/schema.svg" width=800>
+</p>
+<p align="center">
 <img alt="PCB image" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/images/sonopi.jpg" width=600>
 </p>
 
