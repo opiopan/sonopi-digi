@@ -1,6 +1,8 @@
 Sonopi Digi
 ===
-![project phase](https://img.shields.io/badge/project%20phase-PCB%20designing-green.svg)
+![project phase](https://img.shields.io/badge/project%20phase-PCB%20design%20fix-green.svg)
+
+<img alt="board image" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/images/sonopi-on-raspi.jpg" width=450 align="right">
 
 Sonopi Digi is a hat card for Raspberry Pi to add a S/PDIF digital sound output capability.<br>
 This hardware design is published under open source lincence. You can use and modify this design freely. There is also no limitation in commercial use.
@@ -9,8 +11,10 @@ In order to export digital sound signal, Sonopi use a [Cirrus Logic WM8804](http
 There are many kind of Raspberry Pi Hats installed WM8804 in the world. This IC is a defacto standard to add a S/PDIF output functionality to Raspberry Pi.
 
 ## Projcect Status
-I've finished PoC on a bread board. That workes fine<br>
-I start to design PCB.
+I've finished PoC on a bread board. That workes fine.
+And PCB design is also fixed.<br>
+Now this project is suspended until other projects PCB design is fixed. I plan to integrate several PCB data into one gerber data in order to reduce production cost.
+
 
 ## Design Goals
 1. **Target to casual use and reasonable cost**<br>
@@ -56,6 +60,25 @@ TXO(17)           | Optical S/PDIF transmitter module
 The PoC is concluded with great success.
 
 <p align="center">
-<img alt="description" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/images/poc.jpg" width=600>
+<img alt="PoC board" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/images/poc.jpg" width=600>
 </p>
 
+## PCB Design
+<p align="center">
+<img alt="PCB image" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/images/sonopi.jpg" width=600>
+</p>
+
+- **Gerber Data**<br>
+Eagle PCB designe files are placed at [here](./pcb/). You can also use [this gerber file archive](https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/data/sonopi-digi-gerber.zip) to order PCB production.
+
+- **BOM**<br>
+    
+    Components | Value / Product Number | Remarks
+    -----------|------------------------|------------------------------
+    IC1        | Cirrus Logic WM8804    |
+    X1         | 27MHz Crystal (3225)   | load capacitance: 15pF
+    R1         | BCN164AB103J7          | resistor array 10K ohm x 4
+    C1, C5     | 1uF (1608)             |
+    C2         | 0.1uF (1608)           |
+    C3, C4     | 27pF (1608)            | need to change value if X1's load capacitance is not 15pF
+    J1         | PLT133/T10W            | 

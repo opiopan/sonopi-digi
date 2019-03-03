@@ -114,11 +114,11 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="WM8804GEDS_RV">
+<library name="WM8804GEDS_RV" urn="urn:adsk.eagle:library:9355947">
 <description>&lt;WOLFSON MICROELECTRONICS - WM8804GEDS/RV - TRANSCEIVER, S/PDIF, 1:1, 20SSOP&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
-<package name="SOP65P780X200-20N">
+<package name="SOP65P780X200-20N" urn="urn:adsk.eagle:footprint:9355948/1" library_version="1" library_locally_modified="yes">
 <description>&lt;b&gt;20 PIN SSOP (7.2 x 5.3 x 1.75 mm)&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-3.55" y="2.925" dx="1.8" dy="0.45" layer="1"/>
@@ -155,8 +155,16 @@
 <circle x="-1.651" y="2.921" radius="0.3" width="0.127" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SOP65P780X200-20N" urn="urn:adsk.eagle:package:9355950/2" type="model" library_version="1" library_locally_modified="yes">
+<description>&lt;b&gt;20 PIN SSOP (7.2 x 5.3 x 1.75 mm)&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P780X200-20N"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="WM8804GEDS_RV">
+<symbol name="WM8804GEDS_RV" urn="urn:adsk.eagle:symbol:9355949/1" library_version="1" library_locally_modified="yes">
 <wire x1="5.08" y1="2.54" x2="35.56" y2="2.54" width="0.254" layer="94"/>
 <wire x1="35.56" y1="-25.4" x2="35.56" y2="2.54" width="0.254" layer="94"/>
 <wire x1="35.56" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
@@ -186,7 +194,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="WM8804" prefix="IC">
+<deviceset name="WM8804" urn="urn:adsk.eagle:component:9355951/1" locally_modified="yes" prefix="IC" library_version="1" library_locally_modified="yes">
 <description>&lt;b&gt;WOLFSON MICROELECTRONICS - WM8804GEDS/RV - TRANSCEIVER, S/PDIF, 1:1, 20SSOP&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.cirrus.com/en/pubs/proDatasheet/WM8804_v4.5.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -216,6 +224,9 @@ Source: &lt;a href="http://www.cirrus.com/en/pubs/proDatasheet/WM8804_v4.5.pdf"&
 <connect gate="G$1" pin="XIN" pad="11"/>
 <connect gate="G$1" pin="XOP" pad="10"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9355950/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="WOLFSON MICROELECTRONICS - WM8804GEDS/RV - TRANSCEIVER, S/PDIF, 1:1, 20SSOP" constant="no"/>
@@ -233,7 +244,7 @@ Source: &lt;a href="http://www.cirrus.com/en/pubs/proDatasheet/WM8804_v4.5.pdf"&
 </deviceset>
 </devicesets>
 </library>
-<library name="raspi-zero">
+<library name="raspi-zero" urn="urn:adsk.eagle:library:9355962">
 <packages>
 <package name="RASPI_BOARD_B+HAT" urn="urn:adsk.eagle:footprint:7043368/1">
 <description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
@@ -317,71 +328,7 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <circle x="61.5" y="3.5" radius="3.2" width="0" layer="30"/>
 <circle x="3.5" y="3.5" radius="3.2" width="0" layer="30"/>
 </package>
-<package name="RASPI_BOARD_B+HAT_ZERO" urn="urn:adsk.eagle:footprint:7043364/1" locally_modified="yes">
-<description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
-Official outline, but without cutouts for display &amp;amp; camera flex connector</description>
-<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="3" y1="0" x2="62" y2="0" width="0" layer="20"/>
-<wire x1="62" y1="0" x2="65" y2="3" width="0" layer="20" curve="90"/>
-<wire x1="65" y1="3" x2="65" y2="27" width="0" layer="20"/>
-<wire x1="65" y1="27" x2="62" y2="30" width="0" layer="20" curve="90"/>
-<wire x1="62" y1="30" x2="3" y2="30" width="0" layer="20"/>
-<wire x1="3" y1="30" x2="0" y2="27" width="0" layer="20" curve="90"/>
-<wire x1="7.1" y1="29.04" x2="7.1" y2="26.5" width="0.127" layer="21"/>
-<wire x1="7.1" y1="26.5" x2="7.1" y2="23.96" width="0.127" layer="21"/>
-<wire x1="7.1" y1="23.96" x2="9.64" y2="23.96" width="0.127" layer="21"/>
-<wire x1="9.64" y1="23.96" x2="57.9" y2="23.96" width="0.127" layer="21"/>
-<wire x1="57.9" y1="23.96" x2="57.9" y2="29.04" width="0.127" layer="21"/>
-<wire x1="57.9" y1="29.04" x2="7.1" y2="29.04" width="0.127" layer="21"/>
-<wire x1="7.1" y1="26.5" x2="9.64" y2="26.5" width="0.127" layer="21"/>
-<wire x1="9.64" y1="26.5" x2="9.64" y2="23.96" width="0.127" layer="21"/>
-<wire x1="0" y1="3" x2="0" y2="27" width="0" layer="20"/>
-<hole x="3.5" y="26.5" drill="2.75"/>
-<hole x="61.5" y="26.5" drill="2.75"/>
-<pad name="1" x="8.37" y="25.23" drill="1" diameter="1.778" shape="square"/>
-<pad name="2" x="8.37" y="27.77" drill="1" diameter="1.778"/>
-<pad name="3" x="10.91" y="25.23" drill="1" diameter="1.778"/>
-<pad name="4" x="10.91" y="27.77" drill="1" diameter="1.778"/>
-<pad name="5" x="13.45" y="25.23" drill="1" diameter="1.778"/>
-<pad name="6" x="13.45" y="27.77" drill="1" diameter="1.778"/>
-<pad name="7" x="15.99" y="25.23" drill="1" diameter="1.778"/>
-<pad name="8" x="15.99" y="27.77" drill="1" diameter="1.778"/>
-<pad name="9" x="18.53" y="25.23" drill="1" diameter="1.778"/>
-<pad name="10" x="18.53" y="27.77" drill="1" diameter="1.778"/>
-<pad name="11" x="21.07" y="25.23" drill="1" diameter="1.778"/>
-<pad name="12" x="21.07" y="27.77" drill="1" diameter="1.778"/>
-<pad name="13" x="23.61" y="25.23" drill="1" diameter="1.778"/>
-<pad name="14" x="23.61" y="27.77" drill="1" diameter="1.778"/>
-<pad name="15" x="26.15" y="25.23" drill="1" diameter="1.778"/>
-<pad name="16" x="26.15" y="27.77" drill="1" diameter="1.778"/>
-<pad name="17" x="28.69" y="25.23" drill="1" diameter="1.778"/>
-<pad name="18" x="28.69" y="27.77" drill="1" diameter="1.778"/>
-<pad name="19" x="31.23" y="25.23" drill="1" diameter="1.778"/>
-<pad name="20" x="31.23" y="27.77" drill="1" diameter="1.778"/>
-<pad name="21" x="33.77" y="25.23" drill="1" diameter="1.778"/>
-<pad name="22" x="33.77" y="27.77" drill="1" diameter="1.778"/>
-<pad name="23" x="36.31" y="25.23" drill="1" diameter="1.778"/>
-<pad name="24" x="36.31" y="27.77" drill="1" diameter="1.778"/>
-<pad name="25" x="38.85" y="25.23" drill="1" diameter="1.778"/>
-<pad name="26" x="38.85" y="27.77" drill="1" diameter="1.778"/>
-<pad name="27" x="41.39" y="25.23" drill="1" diameter="1.778"/>
-<pad name="28" x="41.39" y="27.77" drill="1" diameter="1.778"/>
-<pad name="29" x="43.93" y="25.23" drill="1" diameter="1.778"/>
-<pad name="30" x="43.93" y="27.77" drill="1" diameter="1.778"/>
-<pad name="31" x="46.47" y="25.23" drill="1" diameter="1.778"/>
-<pad name="32" x="46.47" y="27.77" drill="1" diameter="1.778"/>
-<pad name="33" x="49.01" y="25.23" drill="1" diameter="1.778"/>
-<pad name="34" x="49.01" y="27.77" drill="1" diameter="1.778"/>
-<pad name="35" x="51.55" y="25.23" drill="1" diameter="1.778"/>
-<pad name="36" x="51.55" y="27.77" drill="1" diameter="1.778"/>
-<pad name="37" x="54.09" y="25.23" drill="1" diameter="1.778"/>
-<pad name="38" x="54.09" y="27.77" drill="1" diameter="1.778"/>
-<pad name="39" x="56.63" y="25.23" drill="1" diameter="1.778"/>
-<pad name="40" x="56.63" y="27.77" drill="1" diameter="1.778"/>
-<hole x="3.5" y="3.5" drill="2.75"/>
-<hole x="61.5" y="3.5" drill="2.75"/>
-</package>
-<package name="RASPI_BOARD_B+HAT_SMALL">
+<package name="RASPI_BOARD_B+HAT_SMALL" urn="urn:adsk.eagle:footprint:9355963/1" library_version="1" library_locally_modified="yes">
 <description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
 Official outline, but without cutouts for display &amp;amp; camera flex connector</description>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
@@ -443,6 +390,70 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <pad name="39" x="56.63" y="15.53" drill="1" diameter="1.778"/>
 <pad name="40" x="56.63" y="18.07" drill="1" diameter="1.778"/>
 </package>
+<package name="RASPI_BOARD_B+HAT_ZERO" urn="urn:adsk.eagle:footprint:7043364/2" library_version="1" library_locally_modified="yes">
+<description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
+Official outline, but without cutouts for display &amp;amp; camera flex connector</description>
+<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="0" x2="62" y2="0" width="0" layer="20"/>
+<wire x1="62" y1="0" x2="65" y2="3" width="0" layer="20" curve="90"/>
+<wire x1="65" y1="3" x2="65" y2="27" width="0" layer="20"/>
+<wire x1="65" y1="27" x2="62" y2="30" width="0" layer="20" curve="90"/>
+<wire x1="62" y1="30" x2="3" y2="30" width="0" layer="20"/>
+<wire x1="3" y1="30" x2="0" y2="27" width="0" layer="20" curve="90"/>
+<wire x1="7.1" y1="29.04" x2="7.1" y2="26.5" width="0.127" layer="21"/>
+<wire x1="7.1" y1="26.5" x2="7.1" y2="23.96" width="0.127" layer="21"/>
+<wire x1="7.1" y1="23.96" x2="9.64" y2="23.96" width="0.127" layer="21"/>
+<wire x1="9.64" y1="23.96" x2="57.9" y2="23.96" width="0.127" layer="21"/>
+<wire x1="57.9" y1="23.96" x2="57.9" y2="29.04" width="0.127" layer="21"/>
+<wire x1="57.9" y1="29.04" x2="7.1" y2="29.04" width="0.127" layer="21"/>
+<wire x1="7.1" y1="26.5" x2="9.64" y2="26.5" width="0.127" layer="21"/>
+<wire x1="9.64" y1="26.5" x2="9.64" y2="23.96" width="0.127" layer="21"/>
+<wire x1="0" y1="3" x2="0" y2="27" width="0" layer="20"/>
+<hole x="3.5" y="26.5" drill="2.75"/>
+<hole x="61.5" y="26.5" drill="2.75"/>
+<hole x="3.5" y="3.5" drill="2.75"/>
+<hole x="61.5" y="3.5" drill="2.75"/>
+<pad name="1" x="8.37" y="25.23" drill="1" diameter="1.778" shape="square"/>
+<pad name="2" x="8.37" y="27.77" drill="1" diameter="1.778"/>
+<pad name="3" x="10.91" y="25.23" drill="1" diameter="1.778"/>
+<pad name="4" x="10.91" y="27.77" drill="1" diameter="1.778"/>
+<pad name="5" x="13.45" y="25.23" drill="1" diameter="1.778"/>
+<pad name="6" x="13.45" y="27.77" drill="1" diameter="1.778"/>
+<pad name="7" x="15.99" y="25.23" drill="1" diameter="1.778"/>
+<pad name="8" x="15.99" y="27.77" drill="1" diameter="1.778"/>
+<pad name="9" x="18.53" y="25.23" drill="1" diameter="1.778"/>
+<pad name="10" x="18.53" y="27.77" drill="1" diameter="1.778"/>
+<pad name="11" x="21.07" y="25.23" drill="1" diameter="1.778"/>
+<pad name="12" x="21.07" y="27.77" drill="1" diameter="1.778"/>
+<pad name="13" x="23.61" y="25.23" drill="1" diameter="1.778"/>
+<pad name="14" x="23.61" y="27.77" drill="1" diameter="1.778"/>
+<pad name="15" x="26.15" y="25.23" drill="1" diameter="1.778"/>
+<pad name="16" x="26.15" y="27.77" drill="1" diameter="1.778"/>
+<pad name="17" x="28.69" y="25.23" drill="1" diameter="1.778"/>
+<pad name="18" x="28.69" y="27.77" drill="1" diameter="1.778"/>
+<pad name="19" x="31.23" y="25.23" drill="1" diameter="1.778"/>
+<pad name="20" x="31.23" y="27.77" drill="1" diameter="1.778"/>
+<pad name="21" x="33.77" y="25.23" drill="1" diameter="1.778"/>
+<pad name="22" x="33.77" y="27.77" drill="1" diameter="1.778"/>
+<pad name="23" x="36.31" y="25.23" drill="1" diameter="1.778"/>
+<pad name="24" x="36.31" y="27.77" drill="1" diameter="1.778"/>
+<pad name="25" x="38.85" y="25.23" drill="1" diameter="1.778"/>
+<pad name="26" x="38.85" y="27.77" drill="1" diameter="1.778"/>
+<pad name="27" x="41.39" y="25.23" drill="1" diameter="1.778"/>
+<pad name="28" x="41.39" y="27.77" drill="1" diameter="1.778"/>
+<pad name="29" x="43.93" y="25.23" drill="1" diameter="1.778"/>
+<pad name="30" x="43.93" y="27.77" drill="1" diameter="1.778"/>
+<pad name="31" x="46.47" y="25.23" drill="1" diameter="1.778"/>
+<pad name="32" x="46.47" y="27.77" drill="1" diameter="1.778"/>
+<pad name="33" x="49.01" y="25.23" drill="1" diameter="1.778"/>
+<pad name="34" x="49.01" y="27.77" drill="1" diameter="1.778"/>
+<pad name="35" x="51.55" y="25.23" drill="1" diameter="1.778"/>
+<pad name="36" x="51.55" y="27.77" drill="1" diameter="1.778"/>
+<pad name="37" x="54.09" y="25.23" drill="1" diameter="1.778"/>
+<pad name="38" x="54.09" y="27.77" drill="1" diameter="1.778"/>
+<pad name="39" x="56.63" y="25.23" drill="1" diameter="1.778"/>
+<pad name="40" x="56.63" y="27.77" drill="1" diameter="1.778"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="RASPI_BOARD_B+HAT" urn="urn:adsk.eagle:package:7043381/1" type="box">
@@ -452,7 +463,14 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <packageinstance name="RASPI_BOARD_B+HAT"/>
 </packageinstances>
 </package3d>
-<package3d name="RASPI_BOARD_B+HAT_SMALL" urn="urn:adsk.eagle:package:7043377/2" locally_modified="yes" type="model">
+<package3d name="RASPI_BOARD_B+HAT_SMALL" urn="urn:adsk.eagle:package:9355965/2" type="model" library_version="1" library_locally_modified="yes">
+<description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
+Official outline, but without cutouts for display &amp;amp; camera flex connector</description>
+<packageinstances>
+<packageinstance name="RASPI_BOARD_B+HAT_SMALL"/>
+</packageinstances>
+</package3d>
+<package3d name="RASPI_BOARD_B+HAT_SMALL" urn="urn:adsk.eagle:package:7043377/3" type="model" library_version="1" library_locally_modified="yes">
 <description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
 Official outline, but without cutouts for display &amp;amp; camera flex connector</description>
 <packageinstances>
@@ -461,7 +479,7 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="RASPI_GPIO_B+#">
+<symbol name="RASPI_GPIO_B+#" urn="urn:adsk.eagle:symbol:9355964/1" library_version="1" library_locally_modified="yes">
 <description>Generic schematic symbol for the Raspberry Pi GPIO connector&lt;br/&gt;
 Model B+ &amp;nbsp; all pins connected</description>
 <wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
@@ -514,7 +532,7 @@ Model B+ &amp;nbsp; all pins connected</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RASPI_BOARD_B+#" prefix="X">
+<deviceset name="RASPI_BOARD_B+#" urn="urn:adsk.eagle:component:9355966/1" locally_modified="yes" prefix="X" library_version="1" library_locally_modified="yes">
 <description>Raspberry Pi GPIO connector with markings for the outer dimensions of the Raspberry Pi board model B+&lt;br&gt;
 with different sets of drill holes or mounting pads&lt;br/&gt;
 All pins connected</description>
@@ -616,7 +634,7 @@ All pins connected</description>
 <connect gate="G$1" pin="TXD" pad="8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7043377/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7043377/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -665,6 +683,9 @@ All pins connected</description>
 <connect gate="G$1" pin="SPI_SCLK" pad="23"/>
 <connect gate="G$1" pin="TXD" pad="8"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9355965/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -673,11 +694,11 @@ All pins connected</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="PLT133_T10W">
+<library name="PLT133_T10W" urn="urn:adsk.eagle:library:9367061">
 <description>&lt;Fiber Optic Transmitters, Receivers, Transceivers Photo Link&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
-<package name="PLT133T10W">
+<package name="PLT133T10W" urn="urn:adsk.eagle:footprint:9367062/1" library_version="1" library_locally_modified="yes">
 <description>&lt;b&gt;PLT133/T10W_1&lt;/b&gt;&lt;br&gt;
 </description>
 <pad name="1" x="2.54" y="-4.11" drill="0.85" diameter="1.38125"/>
@@ -699,8 +720,16 @@ All pins connected</description>
 <wire x1="2.7" y1="-6.9" x2="2.5" y2="-6.9" width="0.2" layer="21" curve="-180"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="PLT133T10W" urn="urn:adsk.eagle:package:9367064/2" type="model" library_version="1" library_locally_modified="yes">
+<description>&lt;b&gt;PLT133/T10W_1&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="PLT133T10W"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PLT133_T10W">
+<symbol name="PLT133_T10W" urn="urn:adsk.eagle:symbol:9367063/1" library_version="1" library_locally_modified="yes">
 <wire x1="5.08" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-7.62" x2="22.86" y2="2.54" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
@@ -715,7 +744,7 @@ All pins connected</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PLT133_T10W" prefix="IC">
+<deviceset name="PLT133_T10W" urn="urn:adsk.eagle:component:9367065/1" locally_modified="yes" prefix="IC" library_version="1" library_locally_modified="yes">
 <description>&lt;b&gt;Fiber Optic Transmitters, Receivers, Transceivers Photo Link&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.everlight.com/file/ProductFile/201407061837400405.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -730,6 +759,9 @@ Source: &lt;a href="http://www.everlight.com/file/ProductFile/201407061837400405
 <connect gate="G$1" pin="VCC" pad="2"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9367064/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="Fiber Optic Transmitters, Receivers, Transceivers Photo Link" constant="no"/>
@@ -1107,12 +1139,12 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 </class>
 </classes>
 <parts>
-<part name="IC1" library="WM8804GEDS_RV" deviceset="WM8804" device=""/>
-<part name="X1" library="raspi-zero" deviceset="RASPI_BOARD_B+#" device="_SMALL" value="RASPI_BOARD_B+#_SMALL"/>
-<part name="J1" library="PLT133_T10W" deviceset="PLT133_T10W" device=""/>
+<part name="IC1" library="WM8804GEDS_RV" library_urn="urn:adsk.eagle:library:9355947" deviceset="WM8804" device="" package3d_urn="urn:adsk.eagle:package:9355950/2"/>
+<part name="J2" library="raspi-zero" library_urn="urn:adsk.eagle:library:9355962" deviceset="RASPI_BOARD_B+#" device="_SMALL" package3d_urn="urn:adsk.eagle:package:9355965/2" value="RASPI_BOARD_B+#_SMALL"/>
+<part name="J1" library="PLT133_T10W" library_urn="urn:adsk.eagle:library:9367061" deviceset="PLT133_T10W" device="" package3d_urn="urn:adsk.eagle:package:9367064/2"/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X2" library="CRYSTAL3225" library_urn="urn:adsk.eagle:library:8815235" deviceset="CRYSTAL3225" device="HS" package3d_urn="urn:adsk.eagle:package:8815239/2" value="27MHz/15pF"/>
+<part name="X1" library="CRYSTAL3225" library_urn="urn:adsk.eagle:library:8815235" deviceset="CRYSTAL3225" device="HS" package3d_urn="urn:adsk.eagle:package:8815239/2" value="27MHz/15pF"/>
 <part name="C1" library="gen-discrete2" library_urn="urn:adsk.eagle:library:7031920" deviceset="CAPACITOR" device="1608" package3d_urn="urn:adsk.eagle:package:5494249/3" value="1u"/>
 <part name="C2" library="gen-discrete2" library_urn="urn:adsk.eagle:library:7031920" deviceset="CAPACITOR" device="1608" package3d_urn="urn:adsk.eagle:package:5494249/3" value="0.1u"/>
 <part name="C3" library="gen-discrete2" library_urn="urn:adsk.eagle:library:7031920" deviceset="CAPACITOR" device="1608" package3d_urn="urn:adsk.eagle:package:5494249/3" value="27p"/>
@@ -1138,7 +1170,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <attribute name="NAME" x="127.762" y="101.092" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="127.508" y="69.088" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="X1" gate="G$1" x="40.64" y="60.96" smashed="yes"/>
+<instance part="J2" gate="G$1" x="40.64" y="60.96" smashed="yes"/>
 <instance part="J1" gate="G$1" x="175.26" y="10.16" smashed="yes">
 <attribute name="NAME" x="189.23" y="15.24" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="189.23" y="0" size="1.778" layer="96" align="center"/>
@@ -1149,7 +1181,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <instance part="GND1" gate="1" x="66.04" y="30.48" smashed="yes">
 <attribute name="VALUE" x="63.5" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="X2" gate="G$1" x="142.24" y="58.42" smashed="yes">
+<instance part="X1" gate="G$1" x="142.24" y="58.42" smashed="yes">
 <attribute name="NAME" x="141.986" y="66.04" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="141.732" y="62.992" size="1.778" layer="96" align="center"/>
 </instance>
@@ -1210,7 +1242,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <nets>
 <net name="BCLK" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="GPIO18"/>
+<pinref part="J2" gate="G$1" pin="GPIO18"/>
 <wire x1="25.4" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="12.7" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -1222,7 +1254,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="SCL"/>
+<pinref part="J2" gate="G$1" pin="SCL"/>
 <wire x1="25.4" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
 <label x="12.7" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -1234,7 +1266,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="SDA"/>
+<pinref part="J2" gate="G$1" pin="SDA"/>
 <wire x1="25.4" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
 <label x="12.7" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -1246,10 +1278,10 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="3V3A"/>
+<pinref part="J2" gate="G$1" pin="3V3A"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="45.72" y1="88.9" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="3V3B"/>
+<pinref part="J2" gate="G$1" pin="3V3B"/>
 <wire x1="45.72" y1="91.44" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="88.9" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
@@ -1300,11 +1332,11 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="GND_B"/>
+<pinref part="J2" gate="G$1" pin="GND_B"/>
 <wire x1="55.88" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="GND_E"/>
+<pinref part="J2" gate="G$1" pin="GND_E"/>
 <wire x1="66.04" y1="48.26" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="45.72" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="43.18" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
@@ -1313,23 +1345,23 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <wire x1="66.04" y1="35.56" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="43.18"/>
-<pinref part="X1" gate="G$1" pin="GND_H"/>
+<pinref part="J2" gate="G$1" pin="GND_H"/>
 <wire x1="55.88" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
 <junction x="66.04" y="35.56"/>
-<pinref part="X1" gate="G$1" pin="GND_A"/>
+<pinref part="J2" gate="G$1" pin="GND_A"/>
 <wire x1="55.88" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <junction x="66.04" y="50.8"/>
-<pinref part="X1" gate="G$1" pin="GND_G"/>
+<pinref part="J2" gate="G$1" pin="GND_G"/>
 <wire x1="55.88" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 <junction x="66.04" y="38.1"/>
-<pinref part="X1" gate="G$1" pin="GND_C"/>
+<pinref part="J2" gate="G$1" pin="GND_C"/>
 <wire x1="55.88" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
 <junction x="66.04" y="48.26"/>
-<pinref part="X1" gate="G$1" pin="GND_D"/>
+<pinref part="J2" gate="G$1" pin="GND_D"/>
 <wire x1="55.88" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <junction x="66.04" y="45.72"/>
-<pinref part="X1" gate="G$1" pin="GND_F"/>
+<pinref part="J2" gate="G$1" pin="GND_F"/>
 <wire x1="55.88" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <junction x="66.04" y="40.64"/>
 </segment>
@@ -1364,10 +1396,10 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <wire x1="142.24" y1="45.72" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="45.72" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="45.72" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="GND_1"/>
+<pinref part="X1" gate="G$1" pin="GND_1"/>
 <wire x1="139.7" y1="48.26" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
 <junction x="139.7" y="45.72"/>
-<pinref part="X2" gate="G$1" pin="GND_2"/>
+<pinref part="X1" gate="G$1" pin="GND_2"/>
 <wire x1="144.78" y1="48.26" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
 <junction x="144.78" y="45.72"/>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -1401,7 +1433,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <segment>
 <pinref part="IC1" gate="G$1" pin="XOP"/>
 <wire x1="121.92" y1="73.66" x2="119.38" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="HOT_1"/>
+<pinref part="X1" gate="G$1" pin="HOT_1"/>
 <wire x1="119.38" y1="73.66" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -1414,7 +1446,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <segment>
 <pinref part="IC1" gate="G$1" pin="XIN"/>
 <wire x1="162.56" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="HOT_2"/>
+<pinref part="X1" gate="G$1" pin="HOT_2"/>
 <wire x1="165.1" y1="73.66" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="58.42" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -1478,14 +1510,14 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <label x="180.34" y="78.74" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="GPIO21"/>
+<pinref part="J2" gate="G$1" pin="GPIO21"/>
 <wire x1="25.4" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <label x="12.7" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LRCLK" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="GPIO19"/>
+<pinref part="J2" gate="G$1" pin="GPIO19"/>
 <wire x1="25.4" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
 <label x="12.7" y="43.18" size="1.778" layer="95"/>
 </segment>
