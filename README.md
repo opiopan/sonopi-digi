@@ -7,7 +7,7 @@ Sonopi Digi
 Sonopi Digi is a hat card for Raspberry Pi to add a S/PDIF digital sound output capability.<br>
 This hardware design is published under open source lincence. You can use and modify this design freely. There is also no limitation in commercial use.
 
-In order to export digital sound signal, Sonopi use a [Cirrus Logic WM8804](https://www.cirrus.com/products/wm8804/) as a S/PDIF transmitter.
+In order to export digital sound signal, [Cirrus Logic WM8804](https://www.cirrus.com/products/wm8804/) is installed on Sonopi Digi as a S/PDIF transmitter.
 There are many kind of Raspberry Pi Hats installed WM8804 in the world. This IC is a defacto standard to add a S/PDIF output functionality to Raspberry Pi.
 
 ## Projcect Status
@@ -72,7 +72,7 @@ The PoC is concluded with great success.
 </p>
 
 - **Gerber Data**<br>
-Eagle PCB designe files are placed at [here](./pcb/). You can also use [this gerber file archive](https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/data/sonopi-digi-gerber.zip) to order PCB production.
+Eagle PCB design files are placed at [here](./pcb/). You can also use [this gerber file archive](https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/data/sonopi-digi-gerber.zip) to order PCB production.
 
 - **BOM**<br>
     
