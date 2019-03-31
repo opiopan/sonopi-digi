@@ -15,4 +15,7 @@
 *.pdf
 *.pro
 *.job
+*.dxf
 CAMOutputs
+.python-version
+outputs

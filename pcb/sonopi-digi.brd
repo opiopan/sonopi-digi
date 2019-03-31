@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
@@ -9203,15 +9203,12 @@ design rules under a new name.</description>
 <wire x1="26.517" y1="12.6122875" x2="26.517" y2="11.102" width="0.1524" layer="1"/>
 <wire x1="22.4924" y1="15.06706875" x2="23.14706875" y2="14.4124" width="0.1524" layer="1"/>
 <wire x1="23.14706875" y1="14.4124" x2="24.7168875" y2="14.4124" width="0.1524" layer="1"/>
-<wire x1="22.4924" y1="16.21654375" x2="22.4924" y2="15.06706875" width="0.1524" layer="1"/>
-<wire x1="21.75654375" y1="16.9524" x2="21.894471875" y2="16.814471875" width="0.1524" layer="1"/>
-<wire x1="21.894471875" y1="16.814471875" x2="22.4924" y2="16.21654375" width="0.1524" layer="1"/>
-<wire x1="21.894471875" y1="16.814471875" x2="21.797115625" y2="16.814471875" width="0.1524" layer="1"/>
-<wire x1="21.797115625" y1="16.814471875" x2="21.6591875" y2="16.9524" width="0.1524" layer="1"/>
-<wire x1="12.0276" y1="16.6476" x2="10.91" y2="15.53" width="0.1524" layer="1"/>
-<wire x1="14.0391875" y1="16.6476" x2="12.0276" y2="16.6476" width="0.1524" layer="1"/>
-<wire x1="21.6591875" y1="16.9524" x2="14.3439875" y2="16.9524" width="0.1524" layer="1"/>
-<wire x1="14.3439875" y1="16.9524" x2="14.0391875" y2="16.6476" width="0.1524" layer="1"/>
+<wire x1="10.91" y1="15.53" x2="12.0276" y2="16.6476" width="0.1524" layer="1"/>
+<wire x1="12.0276" y1="16.6476" x2="14.0391875" y2="16.6476" width="0.1524" layer="1"/>
+<wire x1="14.0391875" y1="16.6476" x2="14.3439875" y2="16.9524" width="0.1524" layer="1"/>
+<wire x1="14.3439875" y1="16.9524" x2="21.6591875" y2="16.9524" width="0.1524" layer="1"/>
+<wire x1="22.4924" y1="16.1191875" x2="22.4924" y2="15.06706875" width="0.1524" layer="1"/>
+<wire x1="21.6591875" y1="16.9524" x2="22.4924" y2="16.1191875" width="0.1524" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="J2" pad="1"/>
