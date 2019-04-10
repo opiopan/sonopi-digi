@@ -13,8 +13,7 @@ There are many kind of Raspberry Pi Hats installed WM8804 in the world. This IC 
 ## Projcect Status
 I've finished PoC on a bread board. That workes fine.
 And PCB design is also fixed.<br>
-Now this project is suspended until other projects PCB design is fixed. I plan to integrate several PCB data into one gerber data in order to reduce production cost.
-
+I'm now procuring components.
 
 ## Design Goals
 1. **Target to casual use and reasonable cost**<br>
