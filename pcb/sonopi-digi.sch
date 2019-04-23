@@ -753,11 +753,11 @@ Source: &lt;a href="http://www.everlight.com/file/ProductFile/201407061837400405
 <devices>
 <device name="" package="PLT133T10W">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="NC_1" pad="4"/>
 <connect gate="G$1" pin="NC_2" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:9367064/2"/>
@@ -1562,23 +1562,23 @@ Source: &lt;a href="http://www.farnell.com/datasheets/2158867.pdf"&gt; Datasheet
 <errors>
 <approved hash="104,1,121.92,81.28,IC1,PVDD,+3V3,,,"/>
 <approved hash="104,1,121.92,78.74,IC1,PGND,GND,,,"/>
-<approved hash="104,1,162.56,93.98,IC1,DVDD,+3V3,,,"/>
+<approved hash="104,1,162.56,93.98,IC1,DVDD,VDD,,,"/>
 <approved hash="104,1,162.56,91.44,IC1,DGND,GND,,,"/>
 <approved hash="202,1,162.56,86.36,IC1,MCLK,,,,"/>
-<approved hash="204,1,33.02,101.6,X1,5V0A,,,,"/>
-<approved hash="104,1,45.72,101.6,X1,3V3A,+3V3,,,"/>
-<approved hash="204,1,55.88,66.04,X1,GND_A,,,,"/>
-<approved hash="204,1,35.56,101.6,X1,5V0B,,,,"/>
-<approved hash="204,1,48.26,101.6,X1,3V3B,,,,"/>
-<approved hash="104,1,55.88,63.5,X1,GND_B,GND,,,"/>
-<approved hash="204,1,55.88,60.96,X1,GND_C,,,,"/>
-<approved hash="204,1,55.88,58.42,X1,GND_D,,,,"/>
-<approved hash="204,1,55.88,55.88,X1,GND_E,,,,"/>
-<approved hash="103,1,25.4,55.88,X1,GPIO19,LRCLK,,,"/>
-<approved hash="103,1,25.4,45.72,X1,GPIO21,DATA,,,"/>
-<approved hash="204,1,55.88,53.34,X1,GND_F,,,,"/>
-<approved hash="204,1,55.88,50.8,X1,GND_G,,,,"/>
-<approved hash="204,1,55.88,48.26,X1,GND_H,,,,"/>
+<approved hash="204,1,33.02,88.9,J2,5V0A,,,,"/>
+<approved hash="104,1,45.72,88.9,J2,3V3A,+3V3,,,"/>
+<approved hash="104,1,55.88,53.34,J2,GND_A,GND,,,"/>
+<approved hash="204,1,35.56,88.9,J2,5V0B,,,,"/>
+<approved hash="104,1,48.26,88.9,J2,3V3B,VDD,,,"/>
+<approved hash="104,1,55.88,50.8,J2,GND_B,GND,,,"/>
+<approved hash="104,1,55.88,48.26,J2,GND_C,GND,,,"/>
+<approved hash="104,1,55.88,45.72,J2,GND_D,GND,,,"/>
+<approved hash="104,1,55.88,43.18,J2,GND_E,GND,,,"/>
+<approved hash="103,1,25.4,43.18,J2,GPIO19,LRCLK,,,"/>
+<approved hash="103,1,25.4,33.02,J2,GPIO21,DATA,,,"/>
+<approved hash="104,1,55.88,40.64,J2,GND_F,GND,,,"/>
+<approved hash="104,1,55.88,38.1,J2,GND_G,GND,,,"/>
+<approved hash="104,1,55.88,35.56,J2,GND_H,GND,,,"/>
 </errors>
 </schematic>
 </drawing>

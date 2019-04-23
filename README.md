@@ -12,8 +12,8 @@ There are many kind of Raspberry Pi Hats installed WM8804 in the world. This IC 
 
 ## Projcect Status
 I've finished PoC on a bread board. That workes fine.
-And PCB design is also fixed.<br>
-I'm now procuring components.
+And PCB design is also fixed.<br> 
+PCB's are in production now.
 
 ## Design Goals
 1. **Target to casual use and reasonable cost**<br>
@@ -71,7 +71,7 @@ The PoC is concluded with great success.
 </p>
 
 - **Gerber Data**<br>
-Eagle PCB design files are placed at [here](./pcb/). You can also use [this gerber file archive](https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/data/sonopi-digi-gerber.zip) to order PCB production.
+Eagle PCB design files are placed at [here](./pcb/). You can also use [this gerber file archive](https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/data/sonopi-digi-gerber-1.1.zip) to order PCB production.
 
 - **BOM**<br>
     
@@ -83,4 +83,4 @@ Eagle PCB design files are placed at [here](./pcb/). You can also use [this gerb
     C1, C5     | 1uF (1608)             |
     C2         | 0.1uF (1608)           |
     C3, C4     | 27pF (1608)            | need to change value if X1's load capacitance is not 15pF
-    J1         | PLT133/T10W            | 
+    J1         | PLT133/T10W            | optical S/PDIF transmitter

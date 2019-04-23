@@ -8,7 +8,7 @@ boards=[
     ('../pcb/CAMOutputs/sonopi-digi.', 0, 25, 0),
     ('../pcb/CAMOutputs/sonopi-digi.', 0, 50, 0),
     ('../pcb/CAMOutputs/sonopi-digi.', 0, 75, 0),
-    ('../pcb/CAMOutputs/sonopi-digi.', 100, 15.15, 90),
+    ('../pcb/CAMOutputs/sonopi-digi.', 100, 15.15, 95),
 ]
 outline = 'outline.dxf'
 mousebites = 'mousebites.dxf'
