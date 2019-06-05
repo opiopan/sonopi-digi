@@ -1,6 +1,6 @@
 Sonopi Digi
 ===
-![project phase](https://img.shields.io/badge/project%20phase-PCB%20design%20fix-green.svg)
+![project phase](https://img.shields.io/badge/project%20phase-production%20done-green.svg)
 
 <img alt="board image" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-digi/images/sonopi-on-raspi.jpg" width=450 align="right">
 
@@ -9,11 +9,6 @@ This hardware design is published under open source lincence. You can use and mo
 
 In order to export digital sound signal, [Cirrus Logic WM8804](https://www.cirrus.com/products/wm8804/) is installed on Sonopi Digi as a S/PDIF transmitter.
 There are many kind of Raspberry Pi Hats installed WM8804 in the world. This IC is a defacto standard to add a S/PDIF output functionality to Raspberry Pi.
-
-## Projcect Status
-I've finished PoC on a bread board. That workes fine.
-And PCB design is also fixed.<br> 
-PCB's are in production now.
 
 ## Design Goals
 1. **Target to casual use and reasonable cost**<br>
