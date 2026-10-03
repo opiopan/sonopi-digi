@@ -12,7 +12,6 @@ boards=[
 ]
 outline = 'outline.dxf'
 mousebites = 'mousebites.dxf'
-fill = 'fill.dxf'
 outputs = 'outputs/sonopi-digi-panelized'
 
 for ext in exts:
@@ -45,9 +44,12 @@ file = gerberex.read(outline)
 file.write(outputs + '.GML')
 print('.', end='', flush=True)
 ctx = GerberComposition()
-file = gerberex.read(fill)
+base = gerberex.rectangle(width=100, height=100, left=0, bottom=0, units='metric')
+base.draw_mode = DxfFile.DM_FILL
+ctx.merge(base)
 file.to_metric()
 file.draw_mode = DxfFile.DM_FILL
+file.negate_polarity()
 ctx.merge(file)
 ctx.dump(outputs + '-fill.GML')
 
